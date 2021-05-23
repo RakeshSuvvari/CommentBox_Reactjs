@@ -1,0 +1,74 @@
+
+.commentContainer{
+    width:auto;
+    height:auto;
+    padding: 20px;
+    margin:10px;
+    background-color: rgb(209, 205, 205);
+}
+
+.commentText{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+
+.newbtn{
+    width: 80px;
+    height: 50px;
+    color: white;
+    background-color:rgb(255, 0, 221);
+    border:rgb(255, 0, 221);
+    display: block;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.editbtn{
+    width: 80px;
+    height: 50px;
+    color: white;
+    background-color:rgb(0, 0, 48);
+    border:rgb(0, 0, 48);
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.savebtn{
+    width: 80px;
+    height: 50px;
+    color: white;
+    background-color:rgb(0, 245, 20);
+    border:rgb(0, 245, 20);
+    display: block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.removebtn{
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-color:rgb(180, 3, 3);
+    border:rgb(180, 3, 3);
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.top{
+    height: auto;
+    width: auto;
+    background-color:black;
+    margin: 0;
+}
+
+.board{
+    width: auto;
+    height: 100%;
+    background-color:rgb(154, 243, 243);
+    padding: 10px;
+    display: block;
+}
