@@ -1,58 +1,37 @@
-# RateLimiter
-The ratelimiter is build to accept arguments R and S followed by sequence of timestamps in ascending order. 
-where,\
-R: maximum number of requests allowed in sliding window\
-S: sliding window time period in seconds\
-Assuming R<=S, if R>S every request is always allowed.
+# CommentBox_ReactApp
 
-## Environment used:
-Operating System: Linux(Ubuntu 20.14LTS)\
-Compiler used: g++ (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
+In the project directory, you can run:
 
-## How to run:
-Run the following Command\
-`g++ rate_limiter.cpp  -o ratelimiter`\
-followed by ./ratelimiter R S a0 a1 a2 . . . 
+### `npm install` and then `npm start`
 
-## Sample Testcases:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Sample1
-#### Input: (R<S)
-./ratelimiter 3 5 2 6 8 10 100 256 789 1024 1642 4215 5025 633256 1628679347
-#### Output:
-2 allowed\
-6 allowed\
-8 allowed\
-10 blocked\
-100 blocked\
-256 allowed\
-789 allowed\
-1024 allowed\
-1642 blocked\
-4215 blocked\
-5025 allowed\
-633256 allowed\
-1628679347 allowed
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-### Sample2
-#### Input: (R=S)
-./ratelimiter 6 6 2 5 8 9 12 23 45 56 78 89 123 456 789 3698 6987 9874 1789562
+## Learn More
 
-#### Output:
-2 allowed\
-5 allowed\
-8 allowed\
-9 allowed\
-12 allowed\
-23 allowed\
-45 allowed\
-56 allowed\
-78 allowed\
-89 allowed\
-123 allowed\
-456 allowed\
-789 allowed\
-3698 allowed\
-6987 allowed\
-9874 allowed\
-1789562 allowed
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
