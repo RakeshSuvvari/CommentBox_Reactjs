@@ -12,16 +12,15 @@ Compiler used: g++ (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
 ## How to run:
 Run the following Command\
 `g++ rate_limiter.cpp  -o ratelimiter`\
-followed by ./ratelimiter R S a1 a2 a3 . . . 
+followed by ./ratelimiter R S a0 a1 a2 . . . 
 
-### Sample Testcases:
+## Sample Testcases:
 
-#### Sample1
-##### Input: (R<S)
-`./ratelimiter 3 5 2 6 8 10 100 256 789 1024 1642 4215 5025 633256 1628679347`
-
-##### Output:
-`2 allowed\
+### Sample1
+#### Input: (R<S)
+./ratelimiter 3 5 2 6 8 10 100 256 789 1024 1642 4215 5025 633256 1628679347
+#### Output:
+2 allowed\
 6 allowed\
 8 allowed\
 10 blocked\
@@ -33,14 +32,14 @@ followed by ./ratelimiter R S a1 a2 a3 . . .
 4215 blocked\
 5025 allowed\
 633256 allowed\
-1628679347 allowed`
+1628679347 allowed
 
-#### Sample2
-##### Input: (R=S)
-`./ratelimiter 6 6 2 5 8 9 12 23 45 56 78 89 123 456 789 3698 6987 9874 1789562`
+### Sample2
+#### Input: (R=S)
+./ratelimiter 6 6 2 5 8 9 12 23 45 56 78 89 123 456 789 3698 6987 9874 1789562
 
-##### Output:
-`2 allowed\
+#### Output:
+2 allowed\
 5 allowed\
 8 allowed\
 9 allowed\
@@ -56,4 +55,4 @@ followed by ./ratelimiter R S a1 a2 a3 . . .
 3698 allowed\
 6987 allowed\
 9874 allowed\
-1789562 allowed`
+1789562 allowed
